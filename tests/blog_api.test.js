@@ -188,6 +188,7 @@ describe('when there is initially some blogs saved', () => {
     const blogToUpdate = blogsAtStart[0]
 
     const newBlog = {
+      user: helper.getUserIdByUsername(testUser.username),
       title: 'Updated Blog',
       author: 'Updated Author',
       url: 'http://example.com/updated',
